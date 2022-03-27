@@ -33,9 +33,9 @@ function Center() {
         console.log("error");
       });
   }, [spotifyapi, playlistId]);
- 
+
   return (
-    <div className="flex-grow  text-white">
+    <div className="flex-grow h-screen overflow-y-scroll scrollbar-hide text-white ">
       <header className="absolute top-5 right-8">
         <div className="flex items-center  space-x-3 opacity-90 bg-black hover:opacity-80 cursor-pointer rounded-full p-1 pr-2">
           <img className="rounded-full w-10 h-10" src={session?.user.image} />

@@ -4,7 +4,7 @@ import Siderbar from "../components/Siderbar";
 
 export default function Home() {
   return (
-    <div className="bg-black h-screen overflow-hidden">
+    <div className="bg-black overflow-hidden h-screen ">
       <main className=" flex">
         <Siderbar />
         <Center />
