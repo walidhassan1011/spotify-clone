@@ -17,6 +17,7 @@ function Song({ order, track }) {
     spoftifyapi.play({
       uris: [track.track.uri],
     });
+    console.log(track.track.uri);
   };
   return (
     <div

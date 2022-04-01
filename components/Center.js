@@ -7,6 +7,7 @@ import { shuffle } from "lodash";
 import UseSpotify from "../hooks/UseSpotify";
 import { signOut } from "next-auth/react";
 import Songs from "./Songs";
+
 const colors = [
   "from-indigo-500",
   "from-blue-500",
@@ -34,7 +35,7 @@ function Center() {
         console.log("error");
       });
   }, [spotifyapi, playlistId]);
-
+  console.log(session);
   return (
     <div className="flex-grow h-screen overflow-y-scroll scrollbar-hide text-white ">
       <header className="absolute top-5 right-8">

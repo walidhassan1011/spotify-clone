@@ -1,5 +1,6 @@
 import { getSession } from "next-auth/react";
 import Center from "../components/Center";
+import Player from "../components/Player";
 import Siderbar from "../components/Siderbar";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <Siderbar />
         <Center />
       </main>
+      <Player />
     </div>
   );
 }
